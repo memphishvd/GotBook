@@ -62,7 +62,7 @@ def login():
     email = request.form.get("email")
     password = request.form.get("password")
     #logindate = datetime.now(tz=tz.tzlocal())
-    logindate = datetime.now
+    logindate = datetime.now()
 
 # Match Login Credentials With DB and Redirect to DASHBOARD for success and INDEX for failure with respective messages accordingly.   
     dbdata = db.execute("select Email, name, userid, last_logged_in from cs50wusers WHERE email=:email AND password=:password", {"email":email, "password":password}).fetchone()
