@@ -4,7 +4,6 @@ psycopg2-binary
 SQLAlchemy
 requests
 datetime
-dateutil
 json
 Jinja2
 gunicorn
